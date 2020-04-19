@@ -19,7 +19,7 @@ class FoodOrderController extends Controller
         $mains = main_dishe::all();
         $sides = side_dishe::all();
         $desserts = dessert::all();
-        return view('home',compact('mains','sides','desserts'));
+        return view('home2',compact('mains','sides','desserts'));
     }
 
     /**

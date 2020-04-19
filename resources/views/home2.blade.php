@@ -86,25 +86,33 @@ input[type=text] {
    <h1>Main Dishes</h1>
 
 <div id="Maindish">
-   @foreach ($mains as $main)
-  <label><input type="checkbox" id="mainRequired" value="{{$main->id}}">{{$main->Maindish}}</label>
-  <input type="text"  id="main" name="{{$main->Maindish}}">
-  @endforeach
+  <label><input type="checkbox" id="1" value="1">Rice</label>
+  <input type="text"  id="Rice" name="Rice">
+   <label><input type="checkbox" id="2" value="2">Rotty</label>
+  <input type="text"  id="Rotty" name="Rotty">
+   <label><input type="checkbox" id="3" value="3">Noodles</label>
+  <input type="text"  id="Noodles" name="Noodles">
  </div>
 
 <div id="Sidedish">
-  <h1>Side Dishes</h1>
-   @foreach ($sides as $side)
-  <label><input type="checkbox" id="sideRequired" value="{{$side->id}}" >{{$side->Sidedish}}</label>
-  <input type="text" id="side" name="{{$side->Sidedish}}">
-  @endforeach
+  <h1>Side Dishes</h1> 
+  <label><input type="checkbox" id="11" value="1" >Wadai</label>
+  <input type="text" id="Wadai" name="Wadai">
+  <label><input type="checkbox" id="22" value="2" >Dhal Curry</label>
+  <input type="text" id="Dhal" name="Dhal Curry">
+  <label><input type="checkbox" id="33" value="3" >Fish Curry</label>
+  <input type="text" id="Fish" name="Fish Curry">
+  
 </div>
 
   <h1>Desserts</h1>
-    @foreach ($desserts as $dessert)
-  <label><input type="checkbox" value="{{$dessert->id}}">{{$dessert->Dessert}}</label>
-  <input type="text" name="{{$dessert->Dessert}}">
-  @endforeach
+  <label><input type="checkbox" id="111" value="1" >Watalappam</label>
+  <input type="text" id="Watalappam" name="Watalappam">
+  <label><input type="checkbox" id="222" value="2" >Jelly</label>
+  <input type="text" id="Jelly" name="Jelly">
+  <label><input type="checkbox" id="333" value="3" >Pudding</label>
+  <input type="text" id="Pudding" name="Pudding">
+  
 
             <div class="row">
               <div class="col-50">
@@ -176,7 +184,7 @@ input[type=text] {
     function isChecked() {
         for (let i = 0; i < checkboxLength; i++) {
             if (checkboxes[i].checked) return true;
-            checkTest();
+           
         }
 
         return false;
@@ -191,14 +199,37 @@ input[type=text] {
 })();
 
 
-function checkTest(){
-document.getElementById("mainRequired").addEventListener('change', function(){
-      document.getElementById("main").required =  this.checked;
-})
-}
 
-document.getElementById("sideRequired").addEventListener('change', function(){
-      document.getElementById("side").required =  this.checked;
+document.getElementById("1").addEventListener('change', function(){
+      document.getElementById("Rice").required =  this.checked;
+})
+document.getElementById("2").addEventListener('change', function(){
+      document.getElementById("Rotty").required =  this.checked;
+})
+document.getElementById("3").addEventListener('change', function(){
+      document.getElementById("Noodles").required =  this.checked;
+})
+
+
+document.getElementById("11").addEventListener('change', function(){
+      document.getElementById("Wadai").required =  this.checked;
+})
+document.getElementById("22").addEventListener('change', function(){
+      document.getElementById("Dhal").required =  this.checked;
+})
+document.getElementById("33").addEventListener('change', function(){
+      document.getElementById("Fish").required =  this.checked;
+})
+
+
+document.getElementById("111").addEventListener('change', function(){
+      document.getElementById("Watalappam").required =  this.checked;
+})
+document.getElementById("222").addEventListener('change', function(){
+      document.getElementById("Jelly").required =  this.checked;
+})
+document.getElementById("333").addEventListener('change', function(){
+      document.getElementById("Pudding").required =  this.checked;
 })
 
 
