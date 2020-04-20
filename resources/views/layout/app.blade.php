@@ -3,10 +3,13 @@
 <html>
 
 <head>
-<title>@yield('title')</title>
+<title>Paradise Restaurant</title>
+<link rel="icon" type="image/gif/png" href="pic.png">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="css/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+
+
 <!-- JAVASCRIPTS -->
 <script src="js/scripts/jquery.min.js"></script>
 <script src="js/scripts/check.js"></script>
@@ -27,14 +30,13 @@
           <li><a href="/"><i class="fa fa-lg fa-home"></i></a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Register</a></li>
+          <li><a href="/report">Report</a></li> 
         </ul>
       </div>
       <div class="fl_right">
         <ul class="nospace">
-          <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
-          <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
+          <li><i class="fa fa-phone"></i> +94 113 567 880</li>
+          <li><i class="fa fa-envelope-o"></i> info@Paradise.com</li>
         </ul>
       </div>
     
@@ -43,31 +45,31 @@
 
 
 <!-- BODY -->
-
 <div class="wrapper row3">
   <div class="hoc container clear"> 
+
+    <!-- <div class="col-md-12">  -->
        @section('body')
         @show
   
-  </div>
 </div>
-
+</div>
 
 <!-- FOOTER -->
 <div class="wrapper row4">
   <footer id="footer" class="hoc clear"> 
   
     <div class="one_half first">
-      <h6 class="heading">Posuere lectus enim quis leo</h6>
-      <p class="btmspace-30">Suspendisse potenti ut tempus consequat accumsan donec.</p>
+      <h6 class="heading">Paradise Restaurant</h6>
+      <p class="btmspace-30">Restaurant And Hotel.</p>
       <ul class="nospace linklist contact">
         <li><i class="fa fa-map-marker"></i>
           <address>
           Street Name &amp; Number, Town, Postcode/Zip
           </address>
         </li>
-        <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
-        <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
+        <li><i class="fa fa-phone"></i> +94 113 567 880</li>
+        <li><i class="fa fa-envelope-o"></i> info@Paradise.com</li>
       </ul>
     </div>
     <div class="one_quarter">
@@ -95,8 +97,8 @@
 <div class="wrapper row5">
   <div id="copyright" class="hoc clear"> 
   
-    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
-    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <p class="fl_left">Copyright &copy; 2020 - All Rights Reserved - <a href="#">Paradise Restaurant</a></p>
+    <p class="fl_right">Developed by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">TMVF</a></p>
    
   </div>
 </div>

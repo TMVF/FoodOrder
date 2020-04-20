@@ -17,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('home');
 // });
 Route::get('/','FoodOrderController@index');
+Route::get('/store','FoodOrderController@store');
+
+Route::get('/report', function () {
+    return view('report');
+});

@@ -234,8 +234,8 @@ input:focus, textarea:focus, *:required:focus{border-color:#D01818;}
 .overlay{color:#FFFFFF; background-color:inherit;}
 .overlay::after{color:inherit; background-color:rgba(0,0,0,.55); background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhJREFUeNpiYGBgePz//38GRhABAgABBgBFTAbfCBNE2AAAAABJRU5ErkJggg==");}
 
-.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#D01818; border-color:#D01818;}
-.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#239B56; width: 31%;}
+.btn:hover, .btn.inverse{color:inherit; border-color:inherit;}
 
 
 /* Rows */

@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 use App\main_dishe;
 use App\side_dishe;
 use App\dessert;
+use App\order;
+use App\dessert_order;
+use App\maindish_order;
+use App\sidedish_order;
 
 class FoodOrderController extends Controller
 {
@@ -19,7 +23,7 @@ class FoodOrderController extends Controller
         $mains = main_dishe::all();
         $sides = side_dishe::all();
         $desserts = dessert::all();
-        return view('home2',compact('mains','sides','desserts'));
+        return view('home',compact('mains','sides','desserts'));
     }
 
     /**
@@ -40,7 +44,32 @@ class FoodOrderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // $pr = $request->main;
+        // $encodedSku = json_encode($request);
+        return $request->all();
+        // return $encodedSku;
+        // $orderId = uniqid();
+
+        // $Corder = new order;
+        // $Corder->OID = $orderId;
+        // $Corder->WID = 2;
+        // $Corder->TotalPrice = 100;
+        // $Corder->save();
+
+        // $arrayTostring = implode(',', $request->input('main'));
+
+        // $Morder = new maindish_order;
+        // $Morder->OID =$orderId;
+        // $Morder->MID = $request->main;}
+        // $Morder->Amount = $encodedSku->amount;
+        // $Morder->save();
+
+
+
+        // $orderId = order::all();
+
+
+
     }
 
     /**

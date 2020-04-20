@@ -6,39 +6,6 @@ body {
   padding: 8px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  margin: 0 -16px;
-}
-
-.col-25 {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-}
-
-.col-50 {
-  -ms-flex: 50%; /* IE10 */
-  flex: 50%;
-}
-
-.col-75 {
-  -ms-flex: 75%; /* IE10 */
-  flex: 75%;
-}
-
-.col-25,
-.col-50,
-.col-75 {
-  padding: 0 16px;
-}
-
 .container {
   background-color: #f2f2f2;
   padding: 5px 20px 15px 20px;
@@ -54,46 +21,53 @@ input[type=text] {
   border-radius: 3px;
 }
 
-.btn {
-  background-color: #4CAF50;
-  color: white;
+/*.btn {
   padding: 12px;
   margin: 10px 0;
   border: none;
-  width: 100%;
+  width: 31%;
+  margin-left:350px; 
   border-radius: 3px;
   cursor: pointer;
   font-size: 17px;
-}
-
-.btn:hover {
-  background-color: #45a049;
-}
-
-
-
+}*/
 
 </style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 @section('title','Paradise Restaurant')
 
 @section('body')
-  
 
-   <center><h3>FOOD ORDER</h3></center>
+
+
+   <center><h3>FOOD ORDER</h3></center><br />
+
 
       <form  mathod="post" action="/action_page.php">
-
+      
+       <!--  <div class="ui-g-6 ui-lg-6 ui-xl-6 ui-md-6 ui-sm-6"> -->
+       
+    
+  <div class="row">
+    <div class="col-md-4">
    <h1>Main Dishes</h1>
-
 <div id="Maindish">
+<!--  <div class="form-group"> -->
   <label><input type="checkbox" id="1" value="1">Rice</label>
+<!-- </div> -->
   <input type="text"  id="Rice" name="Rice">
    <label><input type="checkbox" id="2" value="2">Rotty</label>
   <input type="text"  id="Rotty" name="Rotty">
    <label><input type="checkbox" id="3" value="3">Noodles</label>
   <input type="text"  id="Noodles" name="Noodles">
  </div>
+</div>
 
+<div class="col-md-4">
 <div id="Sidedish">
   <h1>Side Dishes</h1> 
   <label><input type="checkbox" id="11" value="1" >Wadai</label>
@@ -102,9 +76,11 @@ input[type=text] {
   <input type="text" id="Dhal" name="Dhal Curry">
   <label><input type="checkbox" id="33" value="3" >Fish Curry</label>
   <input type="text" id="Fish" name="Fish Curry">
-  
+</div>
 </div>
 
+
+<div class="col-md-4">
   <h1>Desserts</h1>
   <label><input type="checkbox" id="111" value="1" >Watalappam</label>
   <input type="text" id="Watalappam" name="Watalappam">
@@ -112,23 +88,15 @@ input[type=text] {
   <input type="text" id="Jelly" name="Jelly">
   <label><input type="checkbox" id="333" value="3" >Pudding</label>
   <input type="text" id="Pudding" name="Pudding">
+</div>
   
+   </div>
 
-            <div class="row">
-              <div class="col-50">
-                <label for="state">State</label>
-                <input type="text" id="state" name="state" placeholder="NY">
-              </div>
-              <div class="col-50">
-                <label for="zip">Zip</label>
-                <input type="text" id="zip" name="zip" placeholder="10001">
-              </div>
-            </div>
-
-        <input type="submit" value="SUBMIT" class="btn">
-  
-
+        <button type="submit" class="btn">SUBMIT</button> 
+ 
       </form>
+
+
 
 <script type="text/javascript">
   (function() {
